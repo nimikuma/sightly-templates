@@ -1,0 +1,7 @@
+<template data-sly-template.textTemplate="${ @ text }">
+    <div data-sly-attribute="text">
+        <a data-sly-test="${text.content && text.anchorName}" id="${text.anchorName}"></a>
+        ${text.content @ context='html'}
+    </div>
+
+</template>
